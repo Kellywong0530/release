@@ -24,9 +24,9 @@ pipeline {
 
     stages {
         
-        stage('Stage 1 - 21051158') {
+        	stage('Stage 1 - 21051158') {
 		
-			step{
+			steps {
 				
 				sh 'echo "Stage 1 Completed - 21051158"'
 			}
