@@ -7,7 +7,8 @@ pipeline {
     }
 
     tools { 
-        maven 'maven3' 
+        maven 'maven3'
+	git 'Default'
     }
 
     options {
@@ -24,14 +25,14 @@ pipeline {
 
     stages {
         
-        stage('Stage 1 - 21051158') {
+        	stage('Stage 1 - 21051158') {
 		
 			steps {
 				
 				sh 'echo "Stage 1 Completed - 21051158"'
 			}
 			
-        }
+       	 	}
 		
 		stage('Parallel') {
 			parallel {
