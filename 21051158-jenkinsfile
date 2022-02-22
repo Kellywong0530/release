@@ -39,7 +39,7 @@ pipeline {
 			
 			stage('Stage 2 - 21051158'){
 				steps {
-					sh 'docker create --detach -it --name=stage2-21051158 apache2-21051158-image /bin/bash'
+					sh 'docker run --detach -it --name=stage2-21051158 apache2-21051158-image /bin/bash'
 					echo "Stage 2 Completed - 21051158"
 				}
 			}
