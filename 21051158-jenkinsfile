@@ -7,8 +7,7 @@ pipeline {
     }
 
     tools { 
-        maven 'maven3'
-	git 'Default'
+        maven 'maven3' 
     }
 
     options {
@@ -25,34 +24,16 @@ pipeline {
 
     stages {
         
-        	stage('Stage 1 - 21051158') {
+        stage('Stage 1 - 21051158') {
 		
 			steps {
 				
 				sh 'echo "Stage 1 Completed - 21051158"'
 			}
 			
-       	 	}
+        }
 		
-		stage('Parallel') {
-			parallel {
-			
-			stage('Stage 2 - 21051158'){
-				steps {
-					sh 'docker create -d -it --name=stage2-21051158 apache2-21051158 /bin/bash'
-					echo "Stage 2 Completed - 21051158"
-				}
-			}
-			
-			stage('Stage 3 - 21051158'){
-				steps {
-					sh 'echo "Stage 3 Completed - 21051158"'
-				}
-			}
-		
-			}
-		
-		}
+
 		
 		
 		
