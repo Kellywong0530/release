@@ -77,6 +77,12 @@ pipeline {
 					echo 'Proceed'
 				}
 			}
+			
+			post {
+				aborted {
+					echo "Stage 5 - 21051158 has been aborted"
+				}
+			}
 		}
 
     }   
