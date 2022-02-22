@@ -30,6 +30,10 @@ pipeline {
 				
 				sh 'echo "Stage 1 Completed - 21051158"'
 			}
+			
+        }
+		
+		stage('Parallel') {
 			parallel {
 			
 			stage('Stage 2 - 21051158'){
@@ -46,7 +50,8 @@ pipeline {
 			}
 		
 			}
-        }
+		
+		}
 		
 		
 		
