@@ -24,15 +24,13 @@ pipeline {
 
     stages {
         
-        	stage('Stage 1 - 21051158') {
+        stage('Stage 1 - 21051158') {
 		
 			steps {
 				
 				sh 'echo "Stage 1 Completed - 21051158"'
 			}
-        }
-		
-		parallel {
+			parallel {
 			
 			stage('Stage 2 - 21051158'){
 			
@@ -44,7 +42,10 @@ pipeline {
 				sh 'echo "Stage 3 Completed - 21051158"'
 			}
 		
-		}
+			}
+        }
+		
+		
 		
 		stage('Stage 4 - 21051158'){
 			
